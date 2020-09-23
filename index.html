@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* resets */
+body { margin:0px; padding:0px; }
+
+/* main */
+header {
+    height: 360px;
+    z-index: 10;
+}
+.header-banner {
+    background-color: #333;
+    background-image: url('https://i.pinimg.com/originals/83/13/f6/8313f67d2546e50652d4e31f74a1a789.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+header h1 {
+    background-color: rgba(18,72,120, 0.8);
+    color: #fff;
+    padding: 0 1rem;
+    position: absolute;
+    top: 4rem; 
+    left: 60rem;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background: #292f36;
+    postion: fixed;
+    z-index: 10;
+}
+
+nav div {
+    color: white;
+    font-size: 2rem;
+    line-height: 60px;
+    position: absolute;
+    top: 0;
+    left: 2%;
+    visibility: hidden;
+}
+.visible-title {
+    visibility: visible;
+}
+
+nav ul { 
+    list-style-type: none;
+    margin: 0 2% auto 0;
+    padding-left: 0;
+    text-align: right;
+    max-width: 100%;
+}
+nav ul li { 
+    display: inline-block; 
+    line-height: 60px;
+    margin-left: 10px;
+}
+nav ul li a {
+    text-decoration: none; 
+    color: #a9abae;
+}
+
+/* demo content */
+body { 
+    color: #292f36;
+    font-family: helvetica;
+    line-height: 1.6;
+}
+.content{ 
+    margin: 0 auto;
+    padding: 4rem 0;
+    width: 960px;
+    max-width: 100%;
+}
+article {
+    float: left;
+    width: 720px;
+}
+article p:first-of-type {
+    margin-top: 0;
+}
+aside {
+    float: right;
+    width: 120px;
+}
+p img {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 960px) {
+    .content{ 
+        padding: 2rem 0;
+    }
+    article {
+        float: none;
+        margin: 0 auto;
+        width: 96%;
+    }
+    article:last-of-type {  
+        margin-bottom: 3rem;
+    }
+    aside {  
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-banner">
+            <h1>JUAN ESTEBAN</h1>
+        </div>
+        <div class="clear"></div>
+        <nav>
+            <div class="site-title"></div>
+            <ul>
+                <li><a ></a></li>
+                <li><a ></a></li>
+                <li><a ></a></li>
+            <ul>
+        </nav>
+    </header>
+         
+    <section class="content">
+        <article>
+            <p>
+                Actualmente me encuentro cursando el 7 semestre de Ingenieria de Sistemas y Telecomunicaciones
+                <br>
+                en la Universidad de Manizales. Ademas soy tecnologo en analisis y desarrollo de sistemas de información
+                egresado del Sena (centro de procesos industriales del año 2017). Actualmente trabajo de desarrollador Full-stack,
+                en tecnologias de php con framework Laravel, además del manejo de HTML, CSS, Javascript y en otros lenguajes como lo son
+                Angular e Ionic
+            </p>
+            <p><img src="https://miro.medium.com/max/900/1*uRroKId3vdIr8QxpScqYMA.png"></p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta corporis quibusdam eveniet, quas suscipit atque libero rem eaque perspiciatis enim pariatur nobis vitae deleniti aut laudantium maxime. Doloremque, non eum.
+            </p>
+        </article>
+            
+        <aside>
+            <img src="https://bertofern.files.wordpress.com/2020/04/laravel.png?w=350">
+            <img src="data:image/jpeg;base64,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">
+        </aside>
+    </section> 
+      
+</body>
+<script>
+/* ========================================== 
+scrollTop() >= 300
+Should be equal the the height of the header
+========================================== */
+
+$(window).scroll(function(){
+    if ($(window).scrollTop() >= 300) {
+        $('nav').addClass('fixed-header');
+        $('nav div').addClass('visible-title');
+    }
+    else {
+        $('nav').removeClass('fixed-header');
+        $('nav div').removeClass('visible-title');
+    }
+});
+
+</script>
+</html>
